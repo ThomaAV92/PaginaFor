@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-image: url(../img/galaxia.jpg);
+}
+
+.nav {
+    background-color: black;
+    width: 100%;
+    height: 80px;
+    color: white;
+}
+
+.nav__logo {
+    width: 200px;
+}
+
+.nav__menu {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2em;
+}
+
+.nav__container {
+    display: flex;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__label, .nav__input {
+    display: none;
+}
+
+.nav__text {
+    font-size: 2rem;
+    text-align: center;
+    margin: 5px auto;
+}
+
+.nav__list {
+    margin-right: 10px;
+}
+
+.nav__anchors {
+    color: white;
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 1.5rem;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+.nav__anchors::after {
+    content: "";
+    display: block;
+    background: #fff;
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path .3s ;
+}
+
+.nav__anchors:hover {
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.main__image {
+    width: 700px;
+    padding: 2rem;
+    margin: auto;
+    transform: translateY(3rem);
+}
+
+.main__title--index {
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 2rem 0;
+    transform: translateY(6rem);
+}
+
+.main__container {
+    color: rgb(255, 255, 255);
+    display: flex;    
+} 
+
+.main__text {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 3rem;
+    margin: auto;
+    transform: translateY(6rem);
+}
+
+
+/* .form__index{
+    width: 40rem;
+    height: 30rem;
+    border: 5px rgb(0, 0, 0) solid;
+    margin: 25px 5px;
+    padding: 8px;
+    background-color: rgb(211, 211, 255);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.form-index label {
+    margin: 10px 5px;
+}
+
+.form-index legend {
+    font-size: 3rem;
+    text-align: center;
+} */
+
+.pie {
+    height: 61px;
+    background-color: black;
+    display: flex;
+    justify-content: end;
+}
+
+.pie__icon {
+    width: 50px;
+    margin: 0 10px;
+}
+
+
+
+.main__title--roles {
+    font-size: 4rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+
+
+.main__title--armas {
+    font-size: 4rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+
+
+.main__title--skin {
+    font-size: 4rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+
+
+.main__title--torneos {
+    font-size: 4rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+@media (max-width: 755px){
+    
+    .nav__label {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav__menu {
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background: rgb(0, 0, 0);
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+    }
+
+    .nav__input:checked + .nav__menu {
+        clip-path: circle(100% at center);
+    }
+    
+    .main__container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-index {
+        margin: 0;
+    }
+
+    .main__title--index {
+        transform: none;
+        font-size: 2rem;
+    }
+
+    .main__text {
+        transform: none;
+        font-size: 1rem;
+    }
+
+    .main__image {
+        width: 400px;
+        transform: none;
+        
+    }
+}
+
+@media (max-width: 465px){
+    .main__image {
+        width: 250px;
+    }
+}

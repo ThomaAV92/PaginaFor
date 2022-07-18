@@ -166,6 +166,20 @@ body {
     margin: 2rem 0;
 }
 
+.container__image:hover {
+    transform: scale(1.1111);  
+}
+
+.container__text:hover {
+    transform: scale(1.1111);
+}
+
+.nav__logo:hover {
+    transform: rotateX(360deg);
+    cursor: pointer;
+    transition: transform 1s; 
+}
+
 @media (max-width: 755px){
     
     .nav__label {

@@ -1,0 +1,12 @@
+footer {
+    height: 61px;
+    background-color: $black;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    transform: translateY(2.1em);
+    a img {
+        width: 50px;
+        margin: 0 10px;
+    }
+}

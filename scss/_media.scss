@@ -1,0 +1,145 @@
+@media (max-width:1574px) {
+    .section__main--roles {
+        width: 1500px;
+        height: auto;
+    }
+}
+
+@media (max-width: 1002px){
+
+    .main__container {
+        display: flex;
+        flex-direction: column;     
+    }
+
+    .main__title--index {
+        font-size: $textmd;
+    }
+
+    .main__text {
+        font-size: 1.5rem;
+    }
+
+    .main__image {
+        width: 690px;
+    }
+}
+
+@media (max-width: 755px){
+    
+    nav {
+        height: 50px;
+        div a img {
+            height: 45px;
+            width: auto;
+        }
+        div label {
+            display: block;
+            cursor: pointer;
+            padding-right: 15px;
+            img {
+                height: 20px;
+                width: 20px;
+            }
+        }
+        div div  {
+            position: fixed;
+            top: 50px;
+            bottom: 0;
+            background: $black;
+            width: 100%;
+            left: 0;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+            clip-path: circle(0 at center);
+            transition: clip-path 1s ease-in-out;
+            z-index: 4;
+        }
+    }
+
+    .nav__input:checked + .nav__menu {
+        clip-path: circle(100% at center);
+    }
+    
+    .main__container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main__title--index {
+        transform: none;
+        font-size: 1.5rem;
+    }
+
+    .main__text {
+        transform: none;
+        font-size: $textsm;
+    }
+
+    .main__image {
+        width: 400px;
+        transform: none;
+        
+    }
+
+    .title--roles {
+        font-size: $textlg;
+    }
+
+    .main--roles {
+        justify-content: center;
+    }
+
+    .title__main--roles {
+        font-size: $textmd;
+    }
+
+    .text__main--roles {
+        font-size: $textsm;
+    }
+
+    .video__main--roles {
+        width: auto;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px){
+    
+    .nav {
+        height: 50px;
+        div a img {
+            height: 45px;
+            width: auto;
+        }
+    }
+    
+    .main__image {
+        width: 250px;
+    }
+
+    footer {
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img  {
+            height: 30px;
+            width: 30px;
+        }
+    }
+
+   .section--roles {
+        text-align: center;
+        p {
+            font-size: 0.9rem;
+       }
+   }
+
+   .title--roles {
+        font-size: $textmd;
+   }
+}

@@ -1,0 +1,33 @@
+.title--roles {
+    font-size: $textxl;
+    text-align: center;
+    margin: 2rem 0;
+    color: $white;
+}
+
+.main--roles {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    .section--roles {
+        width: 1000px;
+        height: 500px;
+        padding: 10px;
+        margin: 10px;
+        h3 {
+            color: $white;
+            font-size: $textlg;
+        }
+        p {
+            color: $white;
+            font-size: 1.3rem;
+            letter-spacing: 0.04em;
+            line-height: 1.2em;
+        }
+    }
+    .video--roles {
+        padding: 10px;
+        margin: 10px;
+    }
+}

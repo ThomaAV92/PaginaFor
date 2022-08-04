@@ -1,0 +1,26 @@
+//extends
+
+.first {
+    @extend .card--skin;
+    padding-bottom: 40px;
+}
+
+//mixins
+
+@mixin text($fontSize, $lineHeight, $color){
+    font-size: $fontSize;
+    line-height: $lineHeight; 
+    color: $color;
+    letter-spacing: 0.04em;   
+}
+
+//maps
+
+$bg:(
+    'uno': transparent,
+    'dos': #420132,
+)
+
+
+//math
+

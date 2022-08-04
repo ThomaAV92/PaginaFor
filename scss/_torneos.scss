@@ -1,3 +1,5 @@
+@import "./mixins";
+
 .title--torneos {
     font-size: $textxl;
     text-align: center;
@@ -51,18 +53,106 @@
     }
 }
 
-.main--torneos {
+// .main--torneos {
+//     display: flex;
+//     flex-wrap: wrap;
+//     align-items: center;
+//     justify-content: center;    
+//     min-height: 100vh;
+//     .card {
+//         position: relative;
+//         width: 290px;
+//         height: 400px;
+//         margin: 45px;
+//         &:hover {
+//             .front {
+//                 transform: perspective(600px) rotateY(180deg);
+//             }
+//             .back {
+//                 transform: perspective(600px) rotateY(360deg);
+//             }
+//         }
+//         .face {
+//             position: absolute;
+//             width: 100%;
+//             height: 100%;
+//             backface-visibility: hidden;
+//             border-radius: 10px;
+//             overflow: hidden;
+//             transition: .5s;
+//         }
+//         .front {
+//             transform: perspective(600px) rotateY(0deg);
+//             box-shadow: 0 5px 10px $black;
+//             }        
+//             img {
+//                 position: absolute;
+//                 width: 100%;
+//                 height: 100%;
+//                 object-fit: cover;
+//             }
+//             h3 {
+//                 position: absolute;
+//                 bottom: 0;
+//                 width: 100%;
+//                 height: 45px;
+//                 line-height: 45px;
+//                 color: $white;
+//                 background: $black;
+//                 text-align: center;
+//             }
+        
+//         .back {
+//             transform: perspective(600px) rotateY(180deg);
+//             background: transparent;
+//             padding: 15px;
+//             color: $white;
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: space-between;
+//             text-align: center;
+//             box-shadow: 0 5px 10px $black;
+//             h3 {
+//                 font-size: 30px;
+//                 margin-top: 20px;
+//                 letter-spacing: 2px;
+//                 color: $white;
+//             }
+//             .link {
+//                 border-top: solid 1px $white;
+//                 height: 50px;
+//                 line-height: 50px;
+//                 a {
+//                     color: $white;
+//                 } 
+//             }
+//             p {
+//                 letter-spacing: 1px;
+//             }
+//         }
+//     }
+// }
+
+.main--torneos{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;    
+    align-content: flex-start;
+    justify-content: center;
     min-height: 100vh;
-    .card {
+    .card{
         position: relative;
-        width: 290px;
-        height: 400px;
-        margin: 45px;
-        .face {
+        width: 300px;
+        height: 350px;
+        margin: 75px 45px;
+        &:hover{
+            .front{
+                transform: perspective(600px) rotateY(180deg);
+            }
+            .back{
+                    transform: perspective(600px) rotateY(360deg);
+            }
+        }
+        .face{
             position: absolute;
             width: 100%;
             height: 100%;
@@ -70,63 +160,53 @@
             border-radius: 10px;
             overflow: hidden;
             transition: .5s;
-        .front {
+        }
+        .front{
             transform: perspective(600px) rotateY(0deg);
-            box-shadow: 0 5px 10px $black;
-            }        
-            img {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
+            box-shadow: 0 5px 10px #000;
             h3 {
                 position: absolute;
                 bottom: 0;
                 width: 100%;
                 height: 45px;
                 line-height: 45px;
-                color: $white;
-                background: $black;
+                color: #fff;
+                background: rgba(0, 0, 0, 0.4);
                 text-align: center;
             }
+            img{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }       
         }
-        .back {
+        .back{
             transform: perspective(600px) rotateY(180deg);
-            background: transparent;
+            background: map-get($map: $bg, $key: 'uno');
             padding: 15px;
-            color: $white;
+            color: #f3f3f3;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             text-align: center;
-            box-shadow: 0 5px 10px $black;
-            .link {
-                border-top: solid 1px $white;
+            box-shadow: 0 5px 10px #000;
+            h3{
+                font-size: 30px;
+                margin-top: 20px;
+                letter-spacing: 2px;
+               }
+            .link{
+                border-top: solid 1px #f3f3f3;
                 height: 50px;
                 line-height: 50px;
                 a {
                     color: $white;
-                } 
+                    text-decoration: none;
+                }
+                
             }
-            h3 {
-                font-size: 30px;
-                margin-top: 20px;
-                letter-spacing: 2px;
-                color: $white;
-                background-color: transparent;
-            }
-            p {
-                letter-spacing: 1px;
-            }
+            
         }
     }
-}
-
-.card:hover .front {
-    transform: perspective(600px) rotateY(180deg);
-}
-
-.card:hover .back {
-    transform: perspective(600px) rotateY(360deg);
 }

@@ -1,3 +1,5 @@
+@import "./scss/mixins";
+
 .title--roles {
     font-size: $textxl;
     text-align: center;
@@ -20,10 +22,7 @@
             font-size: $textlg;
         }
         p {
-            color: $white;
-            font-size: 1.3rem;
-            letter-spacing: 0.04em;
-            line-height: 1.2em;
+            @include text(1.3rem,1.2em,white);
         }
     }
     .video--roles {

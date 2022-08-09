@@ -1,9 +1,45 @@
-.main__title--armas {
+.title--armas {
     font-size: $textxl;
     text-align: center;
     margin: 2rem 0;
+    color: $white;
 }
 
-.table {
-    background-color: $white;
+.main--armas {
+    color: $white;
+    font-size: 1.5em;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    h3 {
+        text-align: center;
+    }
+    div img {
+        height: 300px;
+        width: 800px;
+    }
+    .ind--armas {
+        padding-bottom: 30px;
+    }
+    .list--armas {
+        padding-bottom: 30px;
+    }
+    .pist--armas {
+        padding-bottom: 30px;
+    }
+    .sub--armas {
+        padding-bottom: 30px;
+    }
+    .esco--armas {
+        padding-bottom: 30px;
+    }
+    .fus--armas {
+        padding-bottom: 30px;
+    }
+    .fran--armas {
+        padding-bottom: 30px;
+    }
 }

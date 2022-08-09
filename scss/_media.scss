@@ -101,10 +101,7 @@
         font-size: $textsm;
     }
 
-    .video__main--roles {
-        width: auto;
-        height: auto;
-    }
+
 }
 
 @media (max-width: 480px){
@@ -122,20 +119,23 @@
     }
 
     footer {
-        height: 40px;
+        height: 51px;
         display: flex;
         justify-content: center;
         align-items: center;
-        img  {
-            height: 30px;
-            width: 30px;
+        a img  {
+            height: 35px;
+            width: 35px;
         }
     }
 
    .section--roles {
         text-align: center;
+        h3 {
+            font-size: $textsm;
+        }
         p {
-            font-size: 0.9rem;
+            font-size: 0.5rem;
        }
    }
 

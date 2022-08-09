@@ -10,11 +10,11 @@
 .main--roles {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     .section--roles {
-        width: 1000px;
-        height: 500px;
+        width: 100%;
+        height: auto;
         padding: 10px;
         margin: 10px;
         h3 {
@@ -28,5 +28,9 @@
     .video--roles {
         padding: 10px;
         margin: 10px;
+        video {
+            height: 85%;
+            width: 100%;
+        }
     }
 }

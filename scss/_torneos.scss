@@ -1,7 +1,7 @@
 @import "./mixins";
 
 .title--torneos {
-    font-size: $textxl;
+    font-size: $textlg;
     text-align: center;
     margin: 2rem 0;
     color: $white;
@@ -52,86 +52,6 @@
       opacity: 1;
     }
 }
-
-// .main--torneos {
-//     display: flex;
-//     flex-wrap: wrap;
-//     align-items: center;
-//     justify-content: center;    
-//     min-height: 100vh;
-//     .card {
-//         position: relative;
-//         width: 290px;
-//         height: 400px;
-//         margin: 45px;
-//         &:hover {
-//             .front {
-//                 transform: perspective(600px) rotateY(180deg);
-//             }
-//             .back {
-//                 transform: perspective(600px) rotateY(360deg);
-//             }
-//         }
-//         .face {
-//             position: absolute;
-//             width: 100%;
-//             height: 100%;
-//             backface-visibility: hidden;
-//             border-radius: 10px;
-//             overflow: hidden;
-//             transition: .5s;
-//         }
-//         .front {
-//             transform: perspective(600px) rotateY(0deg);
-//             box-shadow: 0 5px 10px $black;
-//             }        
-//             img {
-//                 position: absolute;
-//                 width: 100%;
-//                 height: 100%;
-//                 object-fit: cover;
-//             }
-//             h3 {
-//                 position: absolute;
-//                 bottom: 0;
-//                 width: 100%;
-//                 height: 45px;
-//                 line-height: 45px;
-//                 color: $white;
-//                 background: $black;
-//                 text-align: center;
-//             }
-        
-//         .back {
-//             transform: perspective(600px) rotateY(180deg);
-//             background: transparent;
-//             padding: 15px;
-//             color: $white;
-//             display: flex;
-//             flex-direction: column;
-//             justify-content: space-between;
-//             text-align: center;
-//             box-shadow: 0 5px 10px $black;
-//             h3 {
-//                 font-size: 30px;
-//                 margin-top: 20px;
-//                 letter-spacing: 2px;
-//                 color: $white;
-//             }
-//             .link {
-//                 border-top: solid 1px $white;
-//                 height: 50px;
-//                 line-height: 50px;
-//                 a {
-//                     color: $white;
-//                 } 
-//             }
-//             p {
-//                 letter-spacing: 1px;
-//             }
-//         }
-//     }
-// }
 
 .main--torneos{
     display: flex;

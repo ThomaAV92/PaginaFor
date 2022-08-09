@@ -232,11 +232,8 @@ footer {
     transform-origin: 50% -1400px;
     opacity: 1; } }
 
-.first {
-  padding-bottom: 40px; }
-
 .title--torneos {
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
   margin: 2rem 0;
   color: white; }
@@ -343,9 +340,6 @@ footer {
           color: white;
           text-decoration: none; }
 
-.first {
-  padding-bottom: 40px; }
-
 .title--roles {
   font-size: 4rem;
   text-align: center;
@@ -355,11 +349,11 @@ footer {
 .main--roles {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center; }
   .main--roles .section--roles {
-    width: 1000px;
-    height: 500px;
+    width: 100%;
+    height: auto;
     padding: 10px;
     margin: 10px; }
     .main--roles .section--roles h3 {
@@ -373,30 +367,34 @@ footer {
   .main--roles .video--roles {
     padding: 10px;
     margin: 10px; }
+    .main--roles .video--roles video {
+      height: 85%;
+      width: 100%; }
 
 .title--skin {
   color: white;
   font-size: 4rem;
-  text-align: center; }
+  text-align: center;
+  margin: 2rem 0; }
 
 .container__card--skin {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center; }
-  .container__card--skin .card--skin, .container__card--skin .first {
+  .container__card--skin .card--skin {
     position: relative;
     width: 300px;
     height: 300px;
     margin: 15px;
     border-radius: 0.7em; }
-    .container__card--skin .card--skin:hover, .container__card--skin .first:hover {
+    .container__card--skin .card--skin:hover {
       transform: scale(1.11); }
-    .container__card--skin .card--skin img, .container__card--skin .first img {
+    .container__card--skin .card--skin img {
       width: 100%;
       height: 100%;
       border-radius: 0.7em; }
-    .container__card--skin .card--skin h3, .container__card--skin .first h3 {
+    .container__card--skin .card--skin h3 {
       font-size: 25px;
       color: white;
       text-shadow: 0 0 2px white;
@@ -406,8 +404,40 @@ footer {
       border-bottom-right-radius: 0.4em;
       letter-spacing: 0.04em; }
 
-.first {
-  padding-bottom: 40px; }
+.title--armas {
+  font-size: 4rem;
+  text-align: center;
+  margin: 2rem 0;
+  color: white; }
+
+.main--armas {
+  color: white;
+  font-size: 1.5em;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; }
+  .main--armas h3 {
+    text-align: center; }
+  .main--armas div img {
+    height: 300px;
+    width: 800px; }
+  .main--armas .ind--armas {
+    padding-bottom: 30px; }
+  .main--armas .list--armas {
+    padding-bottom: 30px; }
+  .main--armas .pist--armas {
+    padding-bottom: 30px; }
+  .main--armas .sub--armas {
+    padding-bottom: 30px; }
+  .main--armas .esco--armas {
+    padding-bottom: 30px; }
+  .main--armas .fus--armas {
+    padding-bottom: 30px; }
+  .main--armas .fran--armas {
+    padding-bottom: 30px; }
 
 @media (max-width: 1574px) {
   .section__main--roles {
@@ -474,10 +504,7 @@ footer {
   .title__main--roles {
     font-size: 2rem; }
   .text__main--roles {
-    font-size: 1rem; }
-  .video__main--roles {
-    width: auto;
-    height: auto; } }
+    font-size: 1rem; } }
 
 @media (max-width: 480px) {
   .nav {
@@ -488,16 +515,18 @@ footer {
   .main__image {
     width: 250px; }
   footer {
-    height: 40px;
+    height: 51px;
     display: flex;
     justify-content: center;
     align-items: center; }
-    footer img {
-      height: 30px;
-      width: 30px; }
+    footer a img {
+      height: 35px;
+      width: 35px; }
   .section--roles {
     text-align: center; }
+    .section--roles h3 {
+      font-size: 1rem; }
     .section--roles p {
-      font-size: 0.9rem; }
+      font-size: 0.5rem; }
   .title--roles {
     font-size: 2rem; } }

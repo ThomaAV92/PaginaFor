@@ -360,7 +360,7 @@ footer {
       color: white;
       font-size: 3rem; }
     .main--roles .section--roles p {
-      font-size: 1.3rem;
+      font-size: 1.5em;
       line-height: 1.2em;
       color: white;
       letter-spacing: 0.04em; }
@@ -414,18 +414,12 @@ footer {
   color: white;
   font-size: 1.5em;
   padding: 20px;
-  margin: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center; }
+  margin: 20px; }
   .main--armas h3 {
     text-align: center; }
   .main--armas div img {
-    height: 300px;
-    width: 800px; }
-  .main--armas .ind--armas {
-    padding-bottom: 30px; }
+    height: 60%;
+    width: 40%; }
   .main--armas .list--armas {
     padding-bottom: 30px; }
   .main--armas .pist--armas {
@@ -439,11 +433,6 @@ footer {
   .main--armas .fran--armas {
     padding-bottom: 30px; }
 
-@media (max-width: 1574px) {
-  .section__main--roles {
-    width: 1500px;
-    height: auto; } }
-
 @media (max-width: 1002px) {
   .main__container {
     display: flex;
@@ -453,7 +442,10 @@ footer {
   .main__text {
     font-size: 1.5rem; }
   .main__image {
-    width: 690px; } }
+    width: 690px; }
+  .main--armas img {
+    height: 80%;
+    width: 80%; } }
 
 @media (max-width: 755px) {
   nav {
@@ -503,8 +495,14 @@ footer {
     justify-content: center; }
   .title__main--roles {
     font-size: 2rem; }
-  .text__main--roles {
-    font-size: 1rem; } }
+  .title--armas {
+    font-size: 3rem; }
+  .text--armas {
+    font-size: 1rem; }
+  .main--armas ul li {
+    font-size: 1rem; }
+  .list--armas {
+    padding-bottom: 2em; } }
 
 @media (max-width: 480px) {
   .nav {
@@ -522,11 +520,17 @@ footer {
     footer a img {
       height: 35px;
       width: 35px; }
+  .title--roles {
+    font-size: 1.5em; }
   .section--roles {
     text-align: center; }
     .section--roles h3 {
-      font-size: 1rem; }
+      font-size: 1.2em; }
     .section--roles p {
-      font-size: 0.5rem; }
-  .title--roles {
-    font-size: 2rem; } }
+      font-size: 0.5em; }
+  .title--armas {
+    font-size: 1.5em; }
+  .subtitle--armas {
+    font-size: 1.25em; }
+  .text--armas {
+    font-size: 1rem; } }

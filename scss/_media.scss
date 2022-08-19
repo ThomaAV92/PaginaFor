@@ -1,10 +1,3 @@
-@media (max-width:1574px) {
-    .section__main--roles {
-        width: 1500px;
-        height: auto;
-    }
-}
-
 @media (max-width: 1002px){
 
     .main__container {
@@ -22,6 +15,13 @@
 
     .main__image {
         width: 690px;
+    }
+
+    .main--armas {
+        img {
+            height: 80%;
+            width: 80%;
+        }
     }
 }
 
@@ -97,10 +97,23 @@
         font-size: $textmd;
     }
 
-    .text__main--roles {
+    .title--armas {
+        font-size: $textlg;
+    }
+
+    .text--armas {
         font-size: $textsm;
     }
 
+    .main--armas {
+        ul li {
+            font-size: $textsm;
+        }
+    }
+
+    .list--armas {
+        padding-bottom: 2em;
+    }
 
 }
 
@@ -129,17 +142,30 @@
         }
     }
 
-   .section--roles {
-        text-align: center;
-        h3 {
-            font-size: $textsm;
-        }
-        p {
-            font-size: 0.5rem;
-       }
-   }
 
    .title--roles {
-        font-size: $textmd;
+        font-size: 1.5em;
    }
+
+    .section--roles {
+        text-align: center;
+        h3 {
+            font-size: 1.2em;
+        }
+        p {
+            font-size: 0.5em;
+        } 
+    }
+
+    .title--armas {
+        font-size: 1.5em;
+    }
+
+    .subtitle--armas {
+        font-size: 1.25em;
+    }
+
+    .text--armas {
+        font-size: $textsm;
+    }
 }
